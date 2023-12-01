@@ -1,0 +1,988 @@
+/*-----------------
+    Whole Program 
+ ------------------*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------
+    Main Part
+------------------*/
+main{
+    margin-top: 3em;
+    margin-bottom:2em;
+}
+
+main.all{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+}
+/*-------------------
+    Navigation Part
+----------------------*/
+header {
+        position: sticky;
+        z-index: 5;
+        top: 0px;
+        background-color: white;
+        height: 80px;
+        text-align: center;
+        color: black;
+        margin: auto;
+        max-width: 1600px;
+        min-width: 500px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+/*------------------
+    Navigation
+--------------------*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav .active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+.topnav ,.horizontal-right a:hover {
+    background-color:white;
+    color: #706f6f;
+
+  }
+
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+nav{
+    flex: 1;
+    text-align: right;
+    background-color: white;
+    /* padding: left; */
+    width: 100%; 
+    margin: 0px;
+}
+
+nav.horizontal{
+  margin: auto;
+  padding: 0%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 20px;
+  } 
+
+nav.horizontal li{
+    float: left;
+    text-decoration: none;
+}
+
+nav li a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover
+.horizontal-right .fa:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* user and cart icon */
+.horizontal-right {
+    float: right;
+}
+
+.cartAmount {
+    position: absolute;
+    right: 20px;
+    bottom:-5px;
+    font-size: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 3px;
+    height: 19px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 3px;
+  }
+
+.fa:hover {
+    background: black;
+    opacity: 1.0;
+}
+
+.fa-user{
+    background: white;
+    color: black;
+  }
+
+.fa-shopping-cart{
+    background: white;
+    color: black;
+}
+
+/*-----------------------
+    Minimization Parts 
+-------------------------*/
+nav.horizontal .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    nav.horizontal a:not(:nth-child(2)) {display: none;}
+    nav.horizontal a.icon {
+      float: left;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    nav.horizontal.responsive {position: relative;}
+    nav.horizontal.responsive a.icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    nav.horizontal.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/*-----------------
+    Footer Part 
+ ------------------*/
+ .logo img {
+    width: 225px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+@keyframes move-rtl{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+    text-align:center;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-top: 20px;
+  
+}
+
+footer {
+    /* background-color: #fff2e4; */
+   background-color: white;
+} 
+
+.footer-col {
+    width: 33.33%;
+    padding: 0 15px;
+    color: #bbbbbb;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #4a361b;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-col .social a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    /*background-color: rgba(255, 241, 229, 0.188); */
+    /* background-color: rgb(240, 211, 160); */
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    /*color: #311717;*/
+    color: black;
+    background-color: white;
+}
+
+.contact {
+    margin-right: 0;
+
+}
+
+.contact li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact li span:nth-child(1) {
+    margin-top: 3px;
+    color: #311717;
+    font-size: 20px;
+}
+
+.contact li span {
+    /* color: #311717; */
+    color : black;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.contact li a {
+    /* color: #311717; */
+    color : black;
+    background-color: white;
+    text-decoration: none;
+}
+
+.contact li a:hover {
+    /* color:#b98d6f; */
+    color:black;
+}
+
+.footer-col .social a:hover {
+    color: white;
+    /* background-color: #ffffff; */
+    background-color: black;
+}
+
+
+@media(max-width: 1000px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 600px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 764px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-col img {
+    margin-top: 40px;
+    width: 250px;
+    height: 100px;
+}
+
+
+.slogan{
+   font-size: 55px;
+   padding-bottom: 50px;
+   padding-left: 30px;
+   padding-top: 20px;
+   /* background-color: #fff2e4; */ 
+   /* font-family: 'Brush Script MT' ; */
+   font-family: Papyrus;
+   text-align: center;
+}
+
+button
+{
+    /* color: #9f8d84; */
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 5px 0px 0px 20px;
+    cursor: pointer;
+    /* background-color: rgb(237, 221, 203);*/
+    background-color: #000000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px grey;
+    /* box-shadow: 0 7px #999; */
+}
+
+button:hover
+{
+    /* background-color: rgb(240, 211, 160); */
+    background-color: rgba(168, 148, 148, 0.578);
+}
+
+ button:active
+{
+    /* After lingyue */
+    /* background-color: rgb(239, 201, 136); */
+    background-color: rgba(168, 148, 148, 0.578);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+/*Sandra part*/
+/*-----------------
+    Body Part 
+ ------------------*/
+section{
+    padding: 60px 14% 70px;
+}
+.index{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(Picture/index/Candle1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.index .content{
+    max-width: 50rem;
+}
+
+.index .content h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 25px;
+    font-family: 'Leckerli One', cursive;
+    line-height: 1.3;
+}
+
+.index .content p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 33px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.indexbtn{
+    background-color: #fee6e3;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #111;
+    text-transform: uppercase;
+    transition: all .50s ease;
+    padding: 20px 35px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.indexbtn:hover{
+    background: #fff;
+}
+
+/*-------------------
+    Hot Product Part 
+ --------------------*/
+
+.trending-product .hot-prodbtn{
+    background-color: #666;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #000;
+    text-transform: uppercase;
+    transition: all .50s ease;
+    padding: 20px 35px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 80px;
+    margin-left: 45%;
+}
+
+.trending-product .hot-prodbtn:hover{
+    background: #fff;
+}
+
+.center-text h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    color: peru;
+    text-decoration-line: underline;
+    margin-bottom: 30px;
+}
+
+.Hotproduct-container{
+    position: relative;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.Hotproduct-container .card{
+    width: 100%;
+    background: #fff;
+}
+
+.Hotproduct-container .card .imgprod{
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+
+.Hotproduct-container .card .imgprod img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.Hotproduct-container .card:hover .imgprod img{
+    transform: scale(1.5);
+}
+
+.Hotproduct-container .card .Hotproduct-content{
+    padding: 10px;
+}
+
+.Hotproduct-container .card .Hotproduct-content .hot-product h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Hotproduct-container .card .Hotproduct-content .hot-product h3{
+    font-family: 'Caveat', cursive;
+}
+
+.Hotproduct-container .card .Hotproduct-content .price{
+    margin-top: 20px;
+    font-family: 'Concert One', cursive;
+}
+
+.featured-promo .promotxt{
+    text-align: center;
+}
+
+.promo-content{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.main-box{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.main-box:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+    transform: translateY(-3%);
+}
+
+.main-box .box-img img{
+    width: 100%;
+    height: 210px;
+}
+
+.main-box .in-bxx{
+    padding: 15px;
+    text-align: center;
+}
+
+.main-box .in-bxx p{
+    line-height: 1.5;
+}
+
+/*-----------------
+    Popup chat part
+ ------------------*/
+.show-btn{
+    background-color: plum;
+    color: white;
+    padding: 15px 19px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.show-btn i{
+    margin-left: -18px;
+    margin-top: -13px;
+    font-size: 38px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#show:checked ~ .wrapper{
+    display: block;
+}
+
+.wrapper{
+    display: none;
+    width: 320px;
+    height: 400px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h6{
+    color: #fff;
+    padding: 15px;
+    background: plum;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wrapper p{
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 10px;
+    width: 270px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(236, 234, 234);
+}
+
+.wrapper form input{
+    display: block;
+    width: 92%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(236, 234, 234);
+}
+
+.wrapper form input::placeholder{
+    color: rgb(214, 211, 211);
+}
+
+.wrapper form .chat{
+    width: 55%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: plum;
+    border-radius: 6px;
+    margin-left: 35px;
+    box-shadow: none;
+}
+
+.wrapper form input:focus{
+    border-color: plum;
+}
+
+.wrapper form .chat:hover{
+    background: rgba(189, 23, 23, 0.5);
+}
+
+.wrapper{
+    animation: popup 1s;
+}
+
+@keyframes popup{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    60%{
+        transform: scale(1.1);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    80%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+}
+
+/*-----------------
+    Customised part
+ ------------------*/
+ section{
+    padding: 60px 14% 70px;
+}
+.customised{
+    position: relative;
+    display: block;
+    align-items: center;
+    min-height: 70vh;
+    background:url(Picture/Customise/Customized.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.customised .content-cus{
+    min-width: 100px;
+}
+
+.customised .content-cus h1{
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+.customised .content-cus h3{
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+.customised .content-cus p{
+    text-align: right;
+    line-height: 2;
+}
+
+.cus-photo img{
+    width: 100%;
+}
+
+.cus-text h3{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cus-text p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Concert One', cursive;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1 {
+    position: relative;
+  }
+  
+/* Hide the images by default */
+.Customised-Slides {
+    display: none;
+}
+  
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* Container for image text */
+.caption-container1 {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    margin-bottom: 20px;
+  }
+  
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+  }
+  
+.active, .demo:hover {
+    opacity: 1;
+}
+
+.cus-btn{
+    margin-left: 40%;
+    background-color: #fcc25e;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #111;
+    text-transform: uppercase;
+    transition: all .50s ease;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.cus-btn:hover{
+    background: peachpuff;
+}
+
+/*-----------------------
+    Customised form part
+ ------------------------*/
+
+.cus-text h1{
+    font-size: 30px;
+}
+
+.customise-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.cust-left{
+    height: 200px;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('Candle2.jpg');
+    background-size: cover; 
+}
+
+.cust-left, .cust-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cust-left .cus-text {
+    text-align: center;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cust-right p{
+    text-align: center;
+    font-size: 15px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    margin-bottom: 1.25rem;
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.cus-btn1{
+    margin-left: 20%;
+    background-color: #fff8b8;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #111;
+    text-transform: uppercase;
+    transition: all .50s ease;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 40px;
+
+}
+
+.cus-btn1:hover{
+    background: #e6eac1;
+}
+@media screen and (min-width: 900px){
+    .customise-container {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .cust-left, 
+    .cust-right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}

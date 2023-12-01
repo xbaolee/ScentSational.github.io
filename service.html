@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add icon library -->
+    <!--ion icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--fafa-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--all members' modules' CSS-->
+    <link href="navmytest.css" rel="stylesheet">
+    <link href="stockist.css" rel="stylesheet">
+    <link href="service.css" rel="stylesheet">
+    
+    <!--Logo and title-->
+    <link href="Images/logo.jpg" rel="icon">
+    <title>Service &ndash; Scent Sational</title>
+</head>
+
+<body>
+    <!--Logo and navigation bar-->
+    <div class="text-shipping">
+
+        <style>
+            .text-shipping{
+                background-color: #000000;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: flex;
+                overflow: hidden;
+                justify-content: flex-start;
+                /* add */
+                margin-bottom: 25px;
+            }
+        </style>
+        
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    </div>
+    
+    <header>
+
+        <style>
+            header h4{
+                text-align: center;
+                font-family: Engravers MT;
+                font-size: 20px;
+                color: black;
+                margin:0;
+                padding:0;
+            }
+
+            h5{
+                font-family: Apple Chancery,cursive;
+                color: white;
+                letter-spacing: 1px;
+                animation: move-rtl 4000ms linear infinite;
+                width: 100%;
+                /* background-color: black;
+                color: white;*/
+            }
+        </style>
+
+        <!--Shop name able to return back to index.html page when click it-->
+        <a href="index.html"><h4>Scent Sational</h4></a>
+        <p style="color: black; margin: 0; padding: 0;">Scented Candles</p>
+
+        <!--The navigation menu --> 
+        <nav class="horizontal" id="horizontalNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        <ul>
+            <div class="topnav" id="myTopnav">
+            <li><a href="index.html"> index </a></li>
+            <!-- sub nav -->
+            <div class="dropdown">
+                <a class="dropbtn"> Product 
+                    <i class="fa fa-caret-down"></i></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Products.html"> Shop all </a>
+                    <a href="OnSale.html"> On sale </a>
+                    <a href="gift.html"> Gift sets </a>
+                    <a href="AccessoriesPage.html"> Accessories </a>
+                    <a href="customised.html"> Customise </a>
+                </div>
+            </div>
+            <!-- Until here -->
+            <li><a href="Vacancy.html"> Vacancy </a></li>
+            <li><a href="service.html" class="active"> Service page </a></li>
+            <li><a href="stockist.html"> Stockist list </a></li>
+            <li><a href="aboutus.html"> About Us </a></li>
+            <li><a href="review.html"> Customers Reviews </a></li>
+            <li><a href="FAQ.html"> FAQ </a></li>   
+
+              <div class="horizontal-right">
+                    <li><a class="fa fa-user" href="membership.html"></a></li>
+                    <li><a class="fa fa-shopping-cart" href="addToCart.html"></a></li>
+                    <a href="addToCart.html">
+                        <div id="cartAmount" class="cartAmount">0</div>
+                    </a>
+                </div>
+        </ul>
+        </nav>
+
+        <!--Minimized nav-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("horizontalNav");
+                if (x.className === "horizontal") {
+                  x.className += "responsive";
+                } else {
+                  x.className = "horizontal";
+                }
+            }
+        </script>
+    </header>
+
+    <!--Members' modules part-->
+    <main>
+
+        <div class="stitle">
+            <h2><br>Workshop Timetable</h2>
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Time</th>
+                <th>8:00am</th>
+                <th>9:00am</th>
+                <th>10:00am</th>
+                <th>11:00am</th>
+                <th>12:00pm</th>
+                <th>1:00pm</th>
+                <th>2:00pm</th>
+                <th>3:00pm</th>
+                <th>4:00pm</th>
+                <th>5:00pm</th>
+                <th>6:00pm</th>
+            </tr>
+
+            <tr>
+                <th>Mon</th>
+                <td colspan="11"> ---- No class available ---- </td>
+            </tr>
+
+            <tr>
+                <th>Tue</th>
+                <td colspan="11"> ---- No class available ---- </td>
+            </tr>
+            <tr>
+                <th>Wed</th>
+                <td colspan="2"></td>
+                <td colspan="3">Class A</td>
+                <td colspan="1">Break</td>
+                <td colspan="2"> History of ScentSational </td>
+                <td colspan="3"></td>
+            </tr>
+
+            <tr>
+                <th>Thurs</th>
+                <td colspan="2"></td>
+                <td colspan="3"> Class B </td>
+                <td colspan="3">Break</td>
+                <td colspan="2"> History of ScentSational </td>
+                <td></td>
+                
+            </tr>
+
+            <tr>
+                <th>Fri</th>
+                <td colspan="11"> ---- No class available ---- </td>
+            </tr>
+
+            <tr>
+                <th>Sat</th>
+                <td colspan="2"></td>
+                <td colspan="3"> Class C & D </td>
+                <td colspan="3">Break</td>
+                <td colspan="2"> History of ScentSational </td>
+                <td colspan="1"></td>
+            </tr>
+
+            <tr>
+                <th>Sun</th>
+                <td colspan="2"></td>
+                <td colspan="3"> Class E & F </td>
+                <td colspan="3">Break</td>
+                <td colspan="2"> History of ScentSational </td>
+                <td colspan="1"></td>
+            </tr>
+        </table>
+
+        <video width="40%" height="40%" controls>
+            <source src="Images/ASMR.mp4" type="video/mp4">
+        </video>
+
+        <div class="reg">
+            <h3><br>Want more fun and different experience to get?<br>Subcribe now to register for our workshop !! </h3>
+            <a href="membership.html"><button type="submit" style="margin-left: 43em;">Register</button></a>
+    </main>
+  
+<!--Popup Chat-->
+<input type="checkbox" id="show">
+<label for="show" class="show-btn">
+    <i class='bx bxl-messenger'></i>
+</label>
+<div class="wrapper">
+    <h6>Let's Chat? - Online</h6>
+    <p>Please fill the form below to start chatting with the next available agent.</p>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Enter your queries">
+        <button class="chat">Start Chat</button>
+    </form>
+</div>
+
+<!--Footer-->
+<footer>
+    
+    <hr>
+    <div class="slogan">
+        Pause,light and unwind.
+    </div>
+
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social">
+                    <a target="_blank" href="https://www.instagram.com/lilinandco/" rel="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a target="_blank" href="https://www.facebook.com/lilinandco" rel="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a target="_blank" href="https://www.youtube.com/@lilinandco7638" rel="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=60108970190&data=AWBMJ2HGij7FSUhkhslQSHRHr8J1NEGutUqCBixSU8jjtlXAng-vdv6IzqHGiiNupcOJ8NQcT_6vAUOULG41coFx6bP371IR_BNoWwvKklLLaxAsCwDrWv5obcvGFySVi3L0os_Lh80KcUccrl5328DE_sKcG2zMWjNMLsVIa6H_o_q0Gm89_Mjrg6rRmB4mGS0VOMeXwF1l95eUuG1J08QljpWGYlYEm6YT5tfC8dvokVSC-pFn5bfANdVobVfQtrpNzLGkyqL30hM7CH_PI6nXW5Z8PFLwJ1iLoWFA8vfDpVewOnw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2eKaTx8WbT2CJuwIDMLXodHh6momIzmcSPL-UNcFiBQ5jz3YYplKzUPKs" rel="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a target="_blank" href="mailto:hello@lilinandco.com" rel="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDbhGfFGgGPfsfJKXDngSVzqhkTbJXRPvMmQqPrzQslXqLNNMWdbvDRrQWnqVBSCgwDRvCQ"><ion-icon name="mail"></ion-icon></a>
+                </div>
+                <br><br>
+                    <h4>Get Your Member for Discount !</h4>
+                    <a href="membership.html"><button type="button">Membership !</button></a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <span><p><a href="tel:0125867066">010-5867066</a></p></span>
+                        </li>
+
+                        <li>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <span><p><a href="mailo:ScentSational@gmail.com">ScentSational@gmail.com</a></p></span>
+                        </li>
+        
+                        <li>
+                            <span><ion-icon name="calendar"></ion-icon></span>
+                            <span>Tue-Sat: 11a.m. - 6p.m.</span>
+                        </li> 
+                  
+                        <li>
+                            <span><ion-icon name="map"></ion-icon></span>
+                            <span>2nd Floor, Lot 5, Jalan 51A/225A, Seksyen 51A,<br>46100 Petaling Jaya, Selangor,<br>Malaysia.</span>
+                        </li> 
+ 
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Location </h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.887491125714!2d101.67184301475727!3d3.1244428977248897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4951ab98609f%3A0x7b61e96a4ec00a6e!2sLilin%2BCo%20%40%20APW!5e0!3m2!1sen!2smy!4v1680363026977!5m2!1sen!2smy" 
+                width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    Copyright &copy; 2023 ScentSational
+</div>
+
+</body>
+<script src="src/Data.js"></script>
+<script src="src/main_gift.js"></script>
+
+</html>

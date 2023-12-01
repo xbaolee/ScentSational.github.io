@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add icon library -->
+    <!--ion icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+    <!--fafa-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Members' modules' CSS-->
+    <link href="indexcus.css" rel="stylesheet">
+    <link href="FAQ.css" rel="stylesheet">
+
+    <!--Boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Main Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    <!--Logo and title-->
+    <link href="Images/logo.jpg" rel="icon">
+    <title>FAQ &ndash; Scent Sational</title>
+</head>
+
+<body>
+    <!--Logo and navigation bar-->
+    <div class="text-shipping">
+        <style>
+            .text-shipping{
+                background-color: #000000;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: flex;
+                overflow: hidden;
+                justify-content: flex-start;
+                /* add */
+                margin-bottom: 25px;
+            }
+        </style>
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    </div>
+    
+    <header>
+
+        <style>
+            header h4{
+                text-align: center;
+                font-family: Engravers MT;
+                font-size: 20px;
+                color: black;
+                margin:0;
+                padding:0;
+            }
+
+            h5{
+                font-family: Apple Chancery,cursive;
+                color: white;
+                letter-spacing: 1px;
+                animation: move-rtl 4000ms linear infinite;
+                width: 100%;
+                /* background-color: black;
+                color: white;*/
+            }
+        </style>
+
+        <!--Shop name able to return back to index.html page when click it-->
+        <a href="index.html"><h4>Scent Sational</h4></a>
+        <p style="color: black; margin: 0; padding: 0;">Scented Candles</p>
+
+        <!--The navigation menu --> 
+        <nav class="horizontal" id="horizontalNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        <ul>
+            <div class="topnav" id="myTopnav">
+            <li><a href="index.html"> index </a></li>
+            <!-- sub nav -->
+            <div class="dropdown">
+                <a class="dropbtn"> Product 
+                    <i class="fa fa-caret-down"></i></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Products.html"> Shop all </a>
+                    <a href="OnSale.html"> On sale </a>
+                    <a href="gift.html"> Gift sets </a>
+                    <a href="AccessoriesPage.html"> Accessories </a>
+                    <a href="customised.html"> Customise </a>
+                </div>
+            </div>
+            <!-- Until here -->
+            <li><a href="Vacancy.html"> Vacancy </a></li>
+            <li><a href="service.html"> Service page </a></li>
+            <li><a href="stockist.html"> Stockist list </a></li>
+            <li><a href="aboutus.html"> About Us </a></li>
+            <li><a href="review.html"> Customers Reviews </a></li>
+            <li><a href="FAQ.html" class="active"> FAQ </a></li>    
+            
+            <div class="horizontal-right">
+                <li><a class="fa fa-user" href="membership.html"></a></li>
+                <li><a class="fa fa-shopping-cart" href="addToCart.html"></a></li>
+                <a href="addToCart.html">
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </a>
+            </div>
+
+        </ul>
+        </nav>
+
+        <!--Minimized nav-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("horizontalNav");
+                if (x.className === "horizontal") {
+                  x.className += "responsive";
+                } else {
+                  x.className = "horizontal";
+                }
+            }
+        </script>
+    </header>
+    <!--Members' modules part-->
+       <!-- pFAQ Content-->
+       <main>
+        <div class="main_FAQ">
+
+            <h1 class="heading">
+                FAQ
+            </h1>
+
+<!-- list of navigation link to each FAQ question -->
+            <div class="sidebar">
+
+                <ol>
+                    <h3>List of FAQ</h3>
+                    <li><a href="#Q1">Are your candles formulated using safe ingredients?</a></li>
+                    <li><a href="#Q2">Where do you source your materials from?</a></li>
+                    <li><a href="#Q3">Are your products vegan?</a></li>
+                    <li><a href="#Q4">Do you offer gift wrapping service?</a></li>
+                    <li><a href="#Q5">Are your products halal/contain alcohol?</a></li>
+                    <li><a href="#Q6">How our products are made?</a></li>
+                    <li><a href="#Q7">Are you on any other platform such as Shopee and Lazada?</a></li>
+                    <li><a href="#Q8">What is the shelf-life of the candles?</a></li>
+                    <li><a href="#Q9">Do you do custom scents?</a></li>
+                    <li><a href="#Q10">What does our brand cooperation include?</a></li>
+                    <li><a href="#Q11">How soon can I expect my order?</a></li>
+                    <li><a href="#Q12">Refund Policies?</a></li>
+                    <li><a href="#contact">Dont Find Your Question? Click to drop down your question!</a></li>
+                </ol>
+
+                    <a href="FAQ/bg4.jpg"><img src="FAQ/bg4.jpg" alt=" background-candle" title="background-candle"
+                            class="heading-pic"></a>
+
+            </div>
+      
+
+          
+                <div class="FAQ_Content" id="FAQ_Content">
+
+            <ol>
+                        <li>
+                            <div class="FAQ" id="Q1">
+
+                                <div class="Question" id="Question">
+                                    Are your candles formulated using safe ingredients?
+                                </div>
+                                <div class="Ans" id="Ans">
+                                    All our candles are formulated using premium soy wax which are biodegradable,
+                                    eco-friendly, and
+                                    less likely to trigger allergies. We use a combination of fragrance and essential
+                                    oils that are
+                                    phthalate free and comply with IFRA (International Fragrance Association) standards.
+                                    Our
+                                    fragrance and wax are non-toxic, vegan and cruelty free. Pregnant mothers are
+                                    advised to use
+                                    their own discretion.
+                                </div>
+                        </li>
+
+                        <li>
+                            <div class="FAQ" id="Q2">
+
+                                <div class="Question" id="Question">
+                                    Where do you source your materials from?
+
+
+                                </div>
+                                <div class="Ans" id="Ans">
+                                    We source from overseas suppliers to ensure our soy candles are up to standard.
+                                </div>
+                        </li>
+                       
+               
+                <li>
+                <div class="FAQ" id="Q3">
+
+                    <div class="Question" id="Question">
+                        Are your products vegan?
+                    </div>
+                    <div class="Ans" id="Ans">
+                        Soy wax is a great vegan alternative as most paraffin candles can be toxic for your health and
+                        the environment.
+                    </div>
+
+
+                </div>
+            </li>
+                <li>
+                    <div class="FAQ" id="Q4">
+
+                        <div class="Question" id="Question">
+                            Do you offer gift wrapping service?
+
+
+                        </div>
+                        <div class="Ans" id="Ans">
+                            We do not offer gift wrapping service as we strive to be an eco-conscious company and play
+                            our
+                            part in reducing waste.
+                        </div>
+              
+        </div>
+    </li>
+        <li>
+        <div class="FAQ" id="Q5">
+
+            <div class="Question" id="Question">
+                Are your products halal/contain alcohol?
+
+            </div>
+            <div class="Ans" id="Ans">
+                All our candles are made from eco-friendly soy wax and blend of essential and fragrance oil. No
+                alcohol or alcoholic beverage is included in the making of our candles. Our products do not
+                carry a halal certification.
+            </div>
+          
+        </div>
+        </li>
+    <li>
+        <div class="FAQ" id="Q6">
+
+            <div class="Question" id="Question">
+                How our products are made?
+            </div>
+
+            <!-- link to a gmail -->
+
+            <div class="Ans" id="Ans">
+                <div class="Ans-video" id="Ans-video">
+                    Here is a video that can generally show u how our product are made. Kindly contact us for
+                    more information, Please email us: <a href="mailto:ScentSational@gmail.com"
+                        target="_blank">ScentSational@gmail.com</a>
+                </div>
+
+                <!-- display and link to youtube video -->
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AW1tYA4GlUI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+        </li>
+        <li>
+
+            <div class="FAQ" id="Q7">
+
+                <div class="Question" id="Question">
+                   Are you on any other platform such as Shopee and Lazada?
+
+
+                </div>
+                <div class="Ans" id="Ans">
+                    Yes, we are listed on <a href="https://www.lazada.com.my/shop/lilin-co/?spm=a2o4k.searchList.search.8.40fa4bJm4bJmMt&path=promotion-37742-0.htm&tab=promotion" target="_blank">Laz Mall</a> and <a href="https://shopee.com.my/lilinandco" target="_blank">Shopee Mall</a> under Lilin+Co.
+                </div>
+
+            </div>
+        </li>
+        <li>
+
+            <div class="FAQ" id="Q8">
+
+                <div class="Question" id="Question">
+                   What is the shelf-life of the candles?
+
+
+                </div>
+                <div class="Ans" id="Ans">
+                    As our candles are hand-poured fresh in small batches and we do not use any preservatives, they
+                    have a shelf life of typically 9 -12 months. Keep the candles away from direct sunlight and
+                    store at room/cool temperature to prolong the shelf-life.
+
+                </div>
+            </div>
+        </li>
+        <li>
+
+           
+            <div class="FAQ" id="Q9">
+
+                <div class="Question" id="Question">
+                    Do you do custom scents?
+
+
+                </div>
+                <div class="Ans" id="Ans">
+                    We are able to do custom scents given advance notice. Custom scents usually take up to 9 months.
+                    Minimum quantity applies. Please email to <a href="mailto:ScentSational@gmail.com"
+                    target="_blank">ScentSational@gmail.com</a> for more information.</div>
+            </div>
+
+        </li>
+        <li>
+
+            <div class="FAQ" id="Q10">
+
+                <div class="Question" id="Question">
+                   What does our brand cooperation include?
+
+                </div>
+                <div class="Ans" id="Ans">
+                    <div class="Ans-brand" id="Ans-brand">
+                        Here is our brand cooperation. For Further information, please visit this webpage. <a
+                            href="stockist.html" target="_blank">Click This!</a>
+
+                        <!-- auto loop picture gallery that shows some of the brand cooperation in the FAQ web page.  -->
+
+                    </div>
+                    <div class="slider">
+                        <div class="slide-track">
+
+                            <!--5 Sildes -->
+
+
+
+                            <div class="slide">
+                                <!-- <div class="overlay">click to learn more</div> -->
+                                <a href="stockist.html"><img src='FAQ/brand1.png' alt="Guinness"
+                                        title="Guinness" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand2.png' alt="Robinsons"
+                                        title="Robinsons" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand3.png' alt="ScentSational x Aldo"
+                                        title="ScentSational x Aldo" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand4.png' alt="ScentSational x The Ruma Hotel"
+                                        title="ScentSational x The Ruma Hotel" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand5.png' alt="ScentSational x So, I'm Jenn"
+                                        title="ScentSationalx So, I'm Jenn" /></a>
+                            </div>
+
+                            <!--Same 5 slides (doubled)-->
+
+
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand1.png' alt="Guinness"
+                                        title="Guinness" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand2.png' alt="Robinsons"
+                                        title="Robinsons" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand3.png' alt="ScentSational x Aldo"
+                                        title="ScentSational x Aldo" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand4.png' alt="ScentSational x The Ruma Hotel"
+                                        title="ScentSational x The Ruma Hotel" /></a>
+                            </div>
+                            <div class="slide">
+                                <a href="stockist.html"><img src='FAQ/brand5.png' alt="ScentSational x So, I'm Jenn"
+                                        title="ScentSationalx So, I'm Jenn" /></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li>
+
+            <div class="FAQ" id="Q11">
+
+                <div class="Question" id="Question">
+                    How soon can I expect my order?
+                </div>
+                <div class="Ans" id="Ans">
+                    Once an order is placed, please allow up to 1-2 business days for your order to be shipped out.
+                    We hand-pour each candle and the entire process is done manually by hand including pouring,
+                    bottling, labelling and shipping. Our hand-poured candles are crafted with love and will take a
+                    little longer to produce as compared to mass-produced candles. We also want to ensure that you
+                    receive freshly made candles for your olfactory experience to indulge.
+                </div>
+            </div>
+        </li>
+        <li>
+
+          
+            <div class="FAQ" id="Q12">
+
+                <div class="Question" id="Question">
+                   Refund Policies?
+                </div>
+                <div class="Ans" id="Ans">
+                    Cancellation and change of orders will only be refunded in store credit.
+                </div>
+
+
+            </div>
+        </li>
+</ol>
+        
+        </div>
+        </div>
+        <!--A form for users to input and store data, the method 'get' is used to check whether the data submitted sucessfully.-->
+        <div id="contact">
+            <div class="bgrow2">
+                <h4>Dont Find Your Answer?<br> Feel free to send us a message!</h4>
+
+                <form action="/action_page.php" method="get">
+                    <div class="container">
+                        <label for="name">*Name:</label>
+                        <input type="text" id="name" name="Name" placeholder="XXX XXX XXX" required>
+
+                        <label for="email">*Email:</label>
+                        <input type="email" id="email" name="Email" placeholder="xxxxxxxxx@gmail.com"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Please follow format:xxxxxxxxx@gmail.com " required>
+
+                        <label for="phone">*Phone number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="000-0000000"
+                            pattern="^\d{10}$|^(\(\d{3}\)s*)?\d{3}[\s-]?\d{7,9}$"
+                            title="Please enter digits only to enter a valid phone number." required>
+
+                        <label for="message">*Message:</label>
+                        <textarea id="message" rows="2" cols="20" required></textarea>
+
+                        <div class="mailMe">
+                            <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                            <label for="mailCB" id="mailtext">Add me to your mailing list for great coupons and
+                                specials!</label>
+                        </div>
+                        <input type="submit" id="submit" onclick="setForm()" value="Submit">
+                        <input type="reset" id="reset" value="Reset">
+
+                    </div>
+                </form>
+            </div>
+    </main>
+
+
+
+
+<!--Popup Chat-->
+<input type="checkbox" id="show">
+<label for="show" class="show-btn">
+    <i class='bx bxl-messenger'></i>
+</label>
+<div class="wrapper">
+    <h6>Let's Chat? - Online</h6>
+    <p>Please fill the form below to start chatting with the next available agent.</p>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Enter your queries">
+        <button class="chat">Start Chat</button>
+    </form>
+</div>
+
+<!--Footer-->
+<footer>
+    
+    <hr>
+    <div class="slogan">
+        Pause,light and unwind.
+    </div>
+
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social">
+                    <a target="_blank" href="https://www.instagram.com/lilinandco/" rel="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a target="_blank" href="https://www.facebook.com/lilinandco" rel="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a target="_blank" href="https://www.youtube.com/@lilinandco7638" rel="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=60108970190&data=AWBMJ2HGij7FSUhkhslQSHRHr8J1NEGutUqCBixSU8jjtlXAng-vdv6IzqHGiiNupcOJ8NQcT_6vAUOULG41coFx6bP371IR_BNoWwvKklLLaxAsCwDrWv5obcvGFySVi3L0os_Lh80KcUccrl5328DE_sKcG2zMWjNMLsVIa6H_o_q0Gm89_Mjrg6rRmB4mGS0VOMeXwF1l95eUuG1J08QljpWGYlYEm6YT5tfC8dvokVSC-pFn5bfANdVobVfQtrpNzLGkyqL30hM7CH_PI6nXW5Z8PFLwJ1iLoWFA8vfDpVewOnw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2eKaTx8WbT2CJuwIDMLXodHh6momIzmcSPL-UNcFiBQ5jz3YYplKzUPKs" rel="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a target="_blank" href="mailto:hello@lilinandco.com" rel="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDbhGfFGgGPfsfJKXDngSVzqhkTbJXRPvMmQqPrzQslXqLNNMWdbvDRrQWnqVBSCgwDRvCQ"><ion-icon name="mail"></ion-icon></a>
+                </div>
+                <br><br>
+                    <h4>Get Your Member for Discount !</h4>
+                    <a href="membership.html "><button type="button">Membership !</button></a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <span><p><a href="tel:0125867066">010-5867066</a></p></span>
+                        </li>
+
+                        <li>
+                            <span><ion-icon name="mail-unread"></ion-icon></span>
+                            <span><p><a href="mailo:ScentSational@gmail.com">ScentSational@gmail.com</a></p></span>
+                        </li>
+        
+                        <li>
+                            <span><ion-icon name="calendar"></ion-icon></span>
+                            <span>Tue-Sat: 11a.m. - 6p.m.</span>
+                        </li> 
+                  
+                        <li>
+                            <span><ion-icon name="map"></ion-icon></span>
+                            <span>2nd Floor, Lot 5, Jalan 51A/225A, Seksyen 51A,<br>46100 Petaling Jaya, Selangor,<br>Malaysia.</span>
+                        </li> 
+ 
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Location </h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.887491125714!2d101.67184301475727!3d3.1244428977248897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4951ab98609f%3A0x7b61e96a4ec00a6e!2sLilin%2BCo%20%40%20APW!5e0!3m2!1sen!2smy!4v1680363026977!5m2!1sen!2smy" 
+                width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    Copyright &copy; 2023 ScentSational
+</div>
+
+</body>
+<script src="src/Data.js"></script>
+<script src="FAQ.js"></script>
+
+</html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add icon library -->
+    <!--ion icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--Boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--fafa-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--product modules' CSS-->
+    <link href="product.css" rel="stylesheet">
+
+    <!--Logo and title-->
+    <link href="Images/logo.jpg" rel="icon">
+    <title>Products &ndash; Scent Sational</title>
+</head>
+
+<body>
+    <!--Logo and navigation bar-->
+    <div class="text-shipping">
+
+        <style>
+            .text-shipping{
+                background-color: #000000;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: flex;
+                overflow: hidden;
+                justify-content: flex-start;
+                /* add */
+                margin-bottom: 25px;
+            }
+        </style>
+
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    <h5>&hearts; Free shipping for online above RM100(WM only) &hearts;</h5>
+    </div>
+    
+    <header>
+
+        <style>
+            header h4{
+                text-align: center;
+                font-family: Engravers MT;
+                font-size: 20px;
+                color: black;
+                margin:0;
+                padding:0;
+            }
+
+            h5{
+                font-family: Apple Chancery,cursive;
+                color: white;
+                letter-spacing: 1px;
+                animation: move-rtl 4000ms linear infinite;
+                width: 100%;
+                /* background-color: black;
+                color: white;*/
+            }
+        </style>
+
+        <!--Shop name able to return back to index.html page when click it-->
+        <a href="index.html"><h4>Scent Sational</h4></a>
+        <p style="color: black; margin: 0; padding: 0;">Scented Candles</p>
+
+        <!--The navigation menu --> 
+        <nav class="horizontal" id="horizontalNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        <ul>
+            <div class="topnav" id="myTopnav">
+            <li><a href="index.html"> index </a></li>
+            <!-- sub nav -->
+            <div class="dropdown">
+                <a class="dropbtn"> Product 
+                    <i class="fa fa-caret-down"></i></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Products.html" class="active"> Shop all </a>
+                    <a href="OnSale.html"> On sale </a>
+                    <a href="gift.html"> Gift sets </a>
+                    <a href="AccessoriesPage.html"> Accessories </a>
+                    <a href="customised.html"> Customise </a>
+                </div>
+            </div>
+            <!-- Until here -->
+            <li><a href="Vacancy.html"> Vacancy </a></li>
+            <li><a href="service.html"> Service page </a></li>
+            <li><a href="stockist.html"> Stockist list </a></li>
+            <li><a href="aboutus.html"> About Us </a></li>
+            <li><a href="review.html"> Customers Reviews </a></li>
+            <li><a href="FAQ.html"> FAQ </a></li>    
+                
+              <div class="horizontal-right">
+                    <li><a class="fa fa-user" href="membership.html"></a></li>
+                    <li><a class="fa fa-shopping-cart" href="addToCart.html"></a></li>
+                    <a href="addToCart.html">
+                        <div id="cartAmount" class="cartAmount">0</div>
+                    </a>
+                </div>
+        </ul>
+        </nav>
+
+        <!--Minimized nav-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("horizontalNav");
+                if (x.className === "horizontal") {
+                  x.className += "responsive";
+                } else {
+                  x.className = "horizontal";
+                }
+            }
+        </script>
+    </header>
+
+    <!--Product modules part-->
+    <main>
+
+        <div class="shopall">
+            <div class="hot_sale">
+                <div id="hotSale_candle1">
+                    <img src="hot_sale/Sage&Lavender_Candle1.jpg" alt="Sage & Lavender" style="height: 260px; width: 210px;">
+                    <img src="hot_sale/Sage & Lavender Candle.jpg" alt="Sage & Lavender" style="height: 260px; width: 210px;" class="hover_img">
+                    
+                    <article>
+                        <h3>Sage & Lavender</h3> 
+                        <ul>
+                            <li>Categories: Fresh, Herbal</li>
+                            <li>Sage help to reduce the risk of serious health conditions like cancer</li>
+                            <li>Lavender have antibacterial and antifungal effects</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+
+                        <div class="PRICE">RM80.00</div>
+
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(hotSale_candle1)"><span><ion-icon
+                        name="cart-outline"></ion-icon></span></a></button>
+                   
+                </div>
+            </div>  
+
+            <div class="hot_sale">
+                <div id="hotSale_candle2">
+                    <img src="hot_sale/Sandalwood-Candle1.jpg" alt="Sandalwood" style="height: 260px; width: 210px;">
+                    <img src="hot_sale/Sandalwood Candle.jpg" alt="Sandalwood" style="height: 260px; width: 210px;" class="hover_img">
+                    
+                    <article>
+                        <h3>Sandalwood</h3> 
+                        <ul>
+                            <li>Categories: Woody</li>
+                            <li>Sandalwood help to calm the mind and relieve anxiety, reduce signs of aging and skin inflammation</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(hotSale_candle2)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="hot_sale">
+                <div id="hotSale_candle3">
+                    <img src="hot_sale/travel-candle-set.jpg" alt="Travel Set" style="height: 260px; width: 210px;">
+                    <img src="hot_sale/travel-candle-set1.jpg" alt="Travel Set" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Travel Candle Set</h3>
+                        <ul>
+                            <li>With its 3 piece 45g travelling set, the Travel Candle Set has made your life easier.</li>
+                            <li>Set Includes:
+                                <ol>
+                                    <li>3 cotton wick wick 45g soy candles in gold finish cannister with lid</li>
+                                    <li>Travel Pouch</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        
+                        <div class="PRICE">RM49.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(hotSale_candle3)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="hot_sale">
+                <div id="hotSale_candle4">
+                    <img src="hot_sale/Reed-Diffuser.jpg" alt="Reed Diffuser" style="height: 260px; width: 210px;">
+                    <img src="hot_sale/Reed Diffuser1.jpg" alt="Reed Diffuser" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Reed Diffuser</h3>
+                        <ul>
+                            <li>Design to perfume index all day long with low maintenance and no flame.</li>
+                            <li>200ml bottle and 8 pieces of fibre reed sticks.</li>
+                            <li>Last 3 - 4 month.</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM99.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(hotSale_candle4)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="hot_sale">
+                <div id="hotSale_candle5">
+                    <img src="hot_sale/sleep-bundle-set.jpg" alt="Sleep Bundle Set" style="height: 260px; width: 210px;">
+
+                    <article>
+                        <h3>Sleep Bundle Set</h3>
+                        <ul>
+                            <li>Ultimate scent trio & Recommend for sleep</li>
+                            <li>3 candles in 170g size:</li>
+                            <ol>
+                                <li>Neroli & Ylang-Ylang</li>
+                                <li>Eucalyptus & Pine</li>
+                                <li>Chamomile & Osmanthus</li>
+                            </ol>
+                        </ul>
+                        
+                        <div class="PRICE">RM230.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(hotSale_candle5)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle1">
+                    <img src="candle/Burnt-Fig-&-Cassis-Candle1.jpg" alt="Burnt Fig & Cassis Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Burnt Fig & Cassis Candle2.jpg" alt="Burnt Fig & Cassis Candle" style="height: 260px; width: 210px;" class="hover_img">
+                    
+                    <article>
+                        <h3>Burnt Fig & Cassis Candle</h3>
+                        <ul>
+                            <li>Categories: Spicy, Woody</li>
+                            <li>To warm up those cold rainy nights</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle1)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle2">
+                    <img src="candle/Caramel-Popcorn-Candle.jpg" alt="Caramel Popcorn Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Caramel Popcorn Candle1.jpg" alt="Caramel Popcorn Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Caramel Popcorn Candle</h3>
+                        <ul>
+                            <li>Categories: Sweet</li>
+                            <li>Bringing the whole cinematic experience into your indexs</li>
+                            <li>65g Cotton Wick (5cm diameter x 6cm height) - able to burns up to 15 hours</li>
+                            <li>Recommend for smaller spaces - eg: bathroom</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM40.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle2)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle3">
+                    <img src="candle/Chamomile-&-Osmanthus-Candle2.jpg" alt="Chamomile & Osmanthus Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Chamomile & Osmanthus Candle.jpg" alt="Chamomile & Osmanthus Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Chamomile & Osmanthus Candle</h3>
+                        <ul>
+                            <li>Categories: Herbal, Citrus</li>
+                            <li>Herbaceous scent sets relaxing mooed with bright notes of bergamot and orange, sage grens,osmanthus and chamomile</li>
+                            <li>Pefrect for self-care me-time</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle3)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle4">
+                    <img src="candle/Clove-&-Cedarwood-Candle.jpg" alt="Clove & Cedarwood Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Clove & Cedarwood Candle1.jpg" alt="Clove & Cedarwood Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Clove & Cedarwood Candle</h3>
+                        <ul>
+                            <li>Categories: Woody, Spicy</li>
+                            <li>Mystical smells and exotic aromas of cedar wood, sandalwood, clove and cinnamon will trasport you to another time at the bazaar</li>
+                            <li>Floral nuances of rosewood, lily, jasmine complete the spice market experience</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle4)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+
+            <div class="candle">
+                <div id="C_candle5">
+                    <img src="candle/Eucalyptus-&-Pine-Candle.jpg" alt="Eucalyptus & Pine Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/eucalyptus&pine.jpg" alt="Eucalyptus & Pine Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Eucalyptus & Pine Candle</h3>
+                        <ul>
+                            <li>Categories: Fresh</li>
+                            <li>Smells like a walk in forest after raining</li>
+                            <li>Suitable for the person love nature and great outdoors</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+                        
+                    </article>
+                
+                    <button class="CartButtons" onclick="increment(C_candle5)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle6">
+                    <img src="candle/Lemongrass-&-Lime-Candle.jpg" alt="Lemongrass & Lime Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Lemongrass & Lime Candle1.jpg" alt="Lemongrass & Lime Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Lemongrass & Lime Candle</h3>
+                        <ul>
+                            <li>Categories: Citrus</li>
+                            <li>Purely refreshing and great for warding off unwanted insects and mosquitoes</li>
+                            <li>65g Cotton Wick (5cm diameter x 6cm height) - able to burns up to 15 hours</li>
+                            <li>Recommend for smaller spaces - eg: bathroom</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM40.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle6)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle7">
+                    <img src="candle/Lychee-&-Black-Tea-Candle.jpg" alt="Lychee & Black Tea Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Lychee & Black Tea Candle1.jpg" alt="Lychee & Black Tea Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Lychee & Black Tea Candle</h3>
+                        <ul>
+                            <li>Categories: Clean</li>
+                            <li>Suitable for those who do not prefer strong scents</li>
+                            <li>65g Cotton Wick (5cm diameter x 6cm height) - able to burns up to 15 hours</li>
+                            <li>Recommend for smaller spaces - eg: bathroom</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM40.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle7)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle8">
+                    <img src="candle/Mimosa-&-Mandarin-Candle1.jpg" alt="Mimosa & Mandarin Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Mimosa & Mandarin Candle2.jpg" alt="Mimosa & Mandarin Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Mimosa & Mandarin Candle</h3>
+                        <ul>
+                            <li>Categories: Floral, Citrus</li>
+                            <li>Release fresh yet bubbly floral scent to uplift your space</li>
+                            <li>Design to create a calm space you can escape to, recommend to buring in the bedroom before your bedtime</li>
+                            <li>65g Cotton Wick (5cm diameter x 6cm height) - able to burns up to 15 hours</li>
+                            <li>Recommend for smaller spaces - eg: bathroom</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM40.00</div>
+                        
+                    </article>
+                
+                    <button class="CartButtons" onclick="increment(C_candle8)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle9">
+                    <img src="candle/Neroli-&-Ylang-Ylang-Candle.jpg" alt="Neroli & Ylang Ylang Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Neroli & Ylang Ylang Candle1.jpg" alt="Neroli & Ylang Ylang Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Neroli & Ylang Ylang Candle</h3>
+                        <ul>
+                            <li>Categories: Floral</li>
+                            <li>Transport you to a cool breeze island of Bali</li>
+                            <li>Contains natural calming properties to promote relaxation</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle9)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle10">
+                    <img src="candle/Olive & Lemon Thyme Candle.jpg" alt="Olive & Lemon Thyme Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Olive-&-Lemon-Thyme-Candle3.jpg" alt="Olive & Lemon Thyme Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Olive & Lemon Thyme Candle</h3>
+                        <ul>
+                            <li>Categories: Earthy, Musky</li>
+                            <li>Promote immunity and are linked with reduced risk of heart disease and Type 2 Diabetes</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+                        
+                    </article>
+                
+                    <button class="CartButtons" onclick="increment(C_candle10)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle11">
+                    <img src="candle/Strawberries-&-Champagne-Candle.jpg" alt="Strawberries & Champagne Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Strawberries & Champagne Candle1.jpg" alt="Strawberries & Champagne Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                    <h3>Strawberries & Champagne Candle</h3>
+                    <ul>
+                        <li>Categories: Sweet</li>
+                        <li>Set a mood for romantic night with a bottle of wine </li>
+                        <li>Jazz up the place with seductive scent blend that mimics the smell of effervescent champagne</li>
+                        <li>65g Cotton Wick (5cm diameter x 6cm height) - able to burns up to 15 hours</li>
+                        <li>Recommend for smaller spaces - eg: bathroom</li>
+                    </ul>
+                    
+                    <div class="PRICE">RM40.00</div>
+                        
+                </article>
+
+                <button class="CartButtons" onclick="increment(C_candle11)"><span><ion-icon
+                    name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="candle">
+                <div id="C_candle12">
+                    <img src="candle/Wild-Frangipani-Candle1.jpg" alt="Wild Frangipani Candle" style="height: 260px; width: 210px;">
+                    <img src="candle/Wild Frangipani Candle.jpg" alt="Wild Frangipani Candle" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Wild Frangipani Candle</h3>
+                        <ul>
+                            <li>Categories: Floral</li>
+                            <li>Bring back the summer holiday memories like the scent of frangipani</li>
+                            <li>170g Cotton Wick (7cm diameter x 8cm height) - able to burns up to 45 hours</li>
+                            <li>Recommend for larger areas - eg: living room</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM80.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(C_candle12)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="gift">
+                <div id="gift_candle1">
+                    <img src="gift_set/classic-gift-set1.jpg" alt="Classic Gift Set" style="height: 260px; width: 210px;">
+                    <img src="gift_set/classic gift set.jpg" alt="Classic Gift Set" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Classic Gift Set</h3>
+                        <ul>
+                            <li>3 small candles - soy candles only</li>
+                            <li>The perfect gift for your special someone beside you</li>
+                            <li>Our Secnt Sational gift box set:</li>
+                            <ol>
+                                <li>Provide a message card and help you to leave message</li>
+                                <li>Include Scent Sational Paper Bag</li>
+                            </ol>
+                        </ul>
+                        
+                        <div class="PRICE">RM96.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(gift_candle1)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="gift">
+                <div id="gift_candle2">
+                    <img src="gift_set/moon-gift-sets.jpg" alt="Moon Gift Set" style="height: 260px; width: 210px;">
+                    <img src="gift_set/moon gift sets1.jpg" alt="Moon Gift Set" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Moon Gift Set</h3>
+                        <ul>
+                            <li>5 small candles</li>
+                            <li>Candles color based on the moon shape</li>
+                            <li>The perfect gift for your special someone beside you</li>
+                            <li>Our Secnt Sational gift set:</li>
+                            <ol>
+                                <li>Provide a message card and help you to leave message</li>
+                                <li>Include Scent Sational Paper Bag</li>
+                            </ol>
+                        </ul>
+                        
+                        <div class="PRICE">RM96.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(gift_candle2)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="gift">
+                <div id="gift_candle3">
+                    <img src="gift_set/premium-candle-gift-sets.png" alt="Premium Candle Gift Sets" style="height: 260px; width: 210px;">
+                    
+                    <article>
+                        <h3>Premium Candle Gift Sets</h3>
+                        <ul>
+                            <li>Two 170g Candles</li>
+                            <li>Include Candle Snuffef & Wick Trimmer</li>
+                            <li>The perfect gift for your special someone beside you</li>
+                            <li>Our Secnt Sational gift set:</li>
+                            <ol>
+                                <li>Provide a message card and help you to leave message</li>
+                                <li>Include Scent Sational Paper Bag</li>
+                            </ol>
+                        </ul>
+                        
+                        <div class="PRICE">RM130.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(gift_candle3)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="gift">
+                <div id="gift_candle4">
+                    <img src="gift_set/Merlot-Scented-Candle-with-Laether-Holder.png" alt="Laether Holder" style="height: 260px; width: 210px;">
+                    <img src="gift_set/Navy-Scented Candle with Laether Holder.png" alt="Laether Holder" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Laether Holder Sets</h3>
+                        <ul>
+                            <li>3 Candles' Leather Holder</li>
+                            <li>3 Color: Merlot, Sand, Navy</li>
+                            <li>The perfect gift for your special someone beside you</li>
+                            <li>Our Secnt Sational gift set:</li>
+                            <ol>
+                                <li>Provide a message card and help you to leave message</li>
+                                <li>Include Scent Sational Paper Bag</li>
+                            </ol>
+                        </ul>
+                        
+                        <div class="PRICE">RM50.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(gift_candle4)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button>
+                </div>
+            </div>
+
+            <div class="accessories">
+                <div id="acc_1">
+                    <img src="accessories/candle-accessories-set.jpg" alt="Candle Accessories Set" style="height: 260px; width: 210px;">
+                    <img src="accessories/candle accessories set1.jpg" alt="Candle Accessories Set" style="height: 260px; width: 210px;" class="hover_img">
+                    
+                    <article>
+                        <h3>Candle Accessories Set</h3>
+                        <ul>
+                            <li>Include:</li>
+                            <ol>
+                                <li>Candle Snuffer</li>
+                                <li>Wick Dipper</li>
+                                <li>Wick Trimmer</li>
+                            </ol>
+                            <li>3 Color: Black, Gold, Rose Gold</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM120.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(acc_1)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button> 
+                </div>
+            </div>
+
+            <div class="accessories">
+                <div id="acc_2">
+                    <img src="accessories/candle-snuffer.jpg" alt="Candle Snuffer" style="height: 260px; width: 210px;">
+                    <img src="accessories/candle snuffer2.jpg" alt="Candle Snuffer" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Candle Snuffer</h3>
+                        <ul>
+                            <li>3 Color: Black, Gold, Rose Gold</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM50.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(acc_2)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button> 
+                </div>
+            </div>
+
+            <div class="accessories">
+                <div id="acc_3">
+                    <img src="accessories/electric-candle-lighter.jpg" alt="Electric Candle Lighter" style="height: 260px; width: 210px;">
+                    <img src="accessories/electric lighter.jpg" alt="Electric Candle Lighter" style="height: 260px; width: 210px;" class="hover_img">
+                    
+                    <article>
+                        <h3>Electric Candle Lighter</h3>
+                        <ul>
+                            <li>3 Color: Black, White, Silver</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM35.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(acc_3)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button> 
+                </div>
+            </div>
+
+            <div class="accessories">
+                <div id="acc_4">
+                    <img src="accessories/wick-dipper.jpg" alt="Wick dipper" style="height: 260px; width: 210px;">
+                    <img src="accessories/wick dipper1.jpg" alt="Wick dipper" style="height: 260px; width: 210px;" class="hover_img">
+
+                    <article>
+                        <h3>Wick Dipper</h3>
+                        <ul>
+                            <li>2 Color: Black, Gold</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM45.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(acc_4)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button> 
+                </div>
+            </div>
+
+            <div class="accessories">
+                <div id="acc_5">
+                    <img src="accessories/wick-trimmer1.jpg" alt="Wick Trimmer" style="height: 260px; width: 210px;">
+                    <img src="accessories/wick trimmer.jpg" alt="Wick Trimmer" style="height: 260px; width: 210px;" class="hover_img">
+                    
+                    <article>
+                        <h3>Wick Trimmer</h3>
+                        <ul>
+                            <li>2 Color: Rose Gold, Gold</li>
+                        </ul>
+                        
+                        <div class="PRICE">RM50.00</div>
+                        
+                    </article>
+
+                    <button class="CartButtons" onclick="increment(acc_5)"><span><ion-icon
+                            name="cart-outline"></ion-icon></span></a></button> 
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+<!--Popup Chat-->
+<input type="checkbox" id="show">
+<label for="show" class="show-btn">
+    <i class='bx bxl-messenger'></i>
+</label>
+<div class="wrapper">
+    <h6>Let's Chat? - Online</h6>
+    <p>Please fill the form below to start chatting with the next available agent.</p>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Enter your queries">
+        <button class="chat">Start Chat</button>
+    </form>
+</div>
+   
+<!--Footer-->
+<footer>
+    
+    <hr>
+    <div class="slogan">
+        Pause,light and unwind.
+    </div>
+
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social">
+                    <a target="_blank" href="https://www.instagram.com/lilinandco/" rel="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a target="_blank" href="https://www.facebook.com/lilinandco" rel="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a target="_blank" href="https://www.youtube.com/@lilinandco7638" rel="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=60108970190&data=AWBMJ2HGij7FSUhkhslQSHRHr8J1NEGutUqCBixSU8jjtlXAng-vdv6IzqHGiiNupcOJ8NQcT_6vAUOULG41coFx6bP371IR_BNoWwvKklLLaxAsCwDrWv5obcvGFySVi3L0os_Lh80KcUccrl5328DE_sKcG2zMWjNMLsVIa6H_o_q0Gm89_Mjrg6rRmB4mGS0VOMeXwF1l95eUuG1J08QljpWGYlYEm6YT5tfC8dvokVSC-pFn5bfANdVobVfQtrpNzLGkyqL30hM7CH_PI6nXW5Z8PFLwJ1iLoWFA8vfDpVewOnw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2eKaTx8WbT2CJuwIDMLXodHh6momIzmcSPL-UNcFiBQ5jz3YYplKzUPKs" rel="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a target="_blank" href="mailto:hello@lilinandco.com" rel="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDbhGfFGgGPfsfJKXDngSVzqhkTbJXRPvMmQqPrzQslXqLNNMWdbvDRrQWnqVBSCgwDRvCQ"><ion-icon name="mail"></ion-icon></a>
+                </div>
+                <br><br>
+                    <h4>Get Your Member for Discount !</h4>
+                    <a href="membership.html"><button type="button">Membership !</button></a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <span><p><a href="tel:0125867066">010-5867066</a></p></span>
+                        </li>
+
+                        <li>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <span><p><a href="mailo:ScentSational@gmail.com">ScentSational@gmail.com</a></p></span>
+                        </li>
+        
+                        <li>
+                            <span><ion-icon name="calendar"></ion-icon></span>
+                            <span>Tue-Sat: 11a.m. - 6p.m.</span>
+                        </li> 
+                  
+                        <li>
+                            <span><ion-icon name="map"></ion-icon></span>
+                            <span>2nd Floor, Lot 5, Jalan 51A/225A, Seksyen 51A,<br>46100 Petaling Jaya, Selangor,<br>Malaysia.</span>
+                        </li> 
+ 
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Location </h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.887491125714!2d101.67184301475727!3d3.1244428977248897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4951ab98609f%3A0x7b61e96a4ec00a6e!2sLilin%2BCo%20%40%20APW!5e0!3m2!1sen!2smy!4v1680363026977!5m2!1sen!2smy" 
+                width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    Copyright &copy; 2023 ScentSational
+</div>
+
+</body>
+<script src="src/Data.js"></script>
+<script src="src/main_gift.js"></script>
+
+</html>
